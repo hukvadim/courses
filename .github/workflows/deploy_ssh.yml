@@ -21,10 +21,37 @@ jobs:
       with:
         switches: -avzr --delete
         path: .
-        remote_path: ${{ secrets.REMOTE_PATH }}
-        remote_host: ${{ secrets.REMOTE_HOST }}
-        remote_user: ${{ secrets.REMOTE_USER }}
-        remote_key: ${{ secrets.REMOTE_KEY }}
+        remote_path: inderio.com/frontend/
+        remote_host: inderio.ftp.tools
+        remote_user: inderio
+        remote_key: |
+          -----BEGIN OPENSSH PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+          NhAAAAAwEAAQAAAQEA2EXfwvsVly/JWII2kT2yKrUdA7Mcn4Fs3oBG/vCO582jZPdeehrn
+          t5OuOwSOEKcUKY4Zwi9h48+FOol05OiQuH+pXZcdTQw4aqsjgUcqX3YGx2SPMxGWW3b6f7
+          1cqbpGMb8fECH6RnegHwsJVPfVj4tI2hUzXnr52jhqGBVdK5nKuJ7qqT/T7ZunxQxT0cYw
+          DHU6btUvkxcHbyu0gjVel1LrkxtEEqN9PW+JU5cdDOoUvp24+v0N0hrg9hZbpRrtElWjor
+          e9NKCOKbjis2vLaK3mjUdowfUPhMSZJXoPqqDiqJ3IhNFIbn1NjDATyO8C8npjzdC8Pmkk
+          FDen3BTx6QAAA9DVu+iL1bvoiwAAAAdzc2gtcnNhAAABAQDYRd/C+xWXL8lYgjaRPbIqtR
+          0DsxyfgWzegEb+8I7nzaNk9156Gue3k647BI4QpxQpjhnCL2Hjz4U6iXTk6JC4f6ldlx1N
+          DDhqqyOBRypfdgbHZI8zEZZbdvp/vVypukYxvx8QIfpGd6AfCwlU99WPi0jaFTNeevnaOG
+          oYFV0rmcq4nuqpP9Ptm6fFDFPRxjAMdTpu1S+TFwdvK7SCNV6XUuuTG0QSo309b4lTlx0M
+          6hS+nbj6/Q3SGuD2FlulGu0SVaOit700oI4puOKza8toreaNR2jB9Q+ExJkleg+qoOKonc
+          iE0UhufU2MMBPI7wLyemPN0Lw+aSQUN6fcFPHpAAAAAwEAAQAAAQEAihNqPYCyExkWMiTI
+          E8hQ5IVG5eLHZmpqCE/bg84vXnziUYbA0bI1t/VYKiPJU4ZoD/PCLEC1/Yyy4WF6uN5l7v
+          TKO49LzLH9ntRuUY4O1m1y/IAOEKus0+5NFZre+xmK0R3VBia7M5wSJV+VcKLdvMxPEbSx
+          XCOlOpYD3iZdmoRjps+xlnmKewdKwDYei+FRWy14JaHIp3UMEOT2ik3m1FzYCspAOw5APL
+          hrK2uWBa2FrWh+CXX4tIhxynm0SvYa20mB24dUpaqi+O45YFbzCJ7vYCFMiQReoTn9ifq2
+          aE4uRX2DCTUvmVEgHd13tPGLEAuXmCzaA9uSSqU4IO1ekQAAAIEAtaNzGrRkcGrTaAAOrq
+          dZgoa4vgnX/apITCXI5uBOC9r3cxRENmmKLYT86vhaX6l7bRBLERTleZ8JQsdt91XT5u3c
+          yEonavSNQzWAgOf8HgdmbL12lfnGSoK2F7UQSW0KBYGHf43jxPIWGsaANRFDrNtPUEUSYU
+          Y/6H1HLnLhHuQAAACBAPbKi4cEOFTDcsSAiDXNBbLj37z2JIAvCwtjU2zI+O10/9T+h6hY
+          TMXqRgSwXovbZAlwcTYzpfxaeuORT6DsIFYlkBZKFZ7ftiCM1CZsKa14L6JFNAzivLdcB5
+          TF903f7+n5lcibCZq/5r+H2vzLGAL2l0D1sfKANqv/VnrjZAWtAAAAgQDgV85C18ZGXTT5
+          E5/u2H+TzLktQKJBlRf/dfAPSrwuWzJ0z+YYscBtlHdKLvE3wMhabD6pUyuENWxGbfNrav
+          w0t06Pgw0OCETPt8t+xEFU3e+yHmF2WbeY1tb6mJgKYV8lglZwwa9MPL0UZTnVv6Bc0ilw
+          URvhcooe0BGloz0MrQAAABRob21lQERFU0tUT1AtTjFGOUwxUgECAwQF
+          -----END OPENSSH PRIVATE KEY-----
     - name: Remove IP from whitelist
       id: removeip
       run: |
