@@ -21,7 +21,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: .
-        remote_path: inderio.com/frontend/
+        remote_path: frontend/
         remote_host: inderio.ftp.tools
         remote_user: inderio
         remote_key: |
