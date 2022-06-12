@@ -1,0 +1,232 @@
+@@include('_system--header.html')
+
+	@@include('_block--nav.html', { "nav_white": false })
+
+
+	<header class="header nav-padding">
+		<div class="container">
+			
+			<div class="header-wrapper d-flex justify-content-between">
+				<div class="header-text-hold">
+					<p class="header-info fw-600">
+						<img src="img/icons/24.png" alt="" class="header-info-img" width="26" height="25">
+						Customer Service Support 24/7
+					</p>
+					<h1 class="header-title fw-800">Have a <span class="h-line">question?</span></h1>
+					<h2 class="header-title-smaller fw-800">We have <span class="c-orange">the answer!</span></h2>
+					<a href="#" class="btn btn-contact">
+						<span class="btn-icon">
+							<span class="btn-icon-circle"></span>
+							<span class="btn-icon-hold">
+								<svg class="icon icon-phone-call"><use xlink:href="#icon-phone-call"></use></svg>
+							</span>
+						</span> <!-- .btn-icon -->
+						<span class="btn-text">0904 123 1234</span>
+					</a> <!-- .btn -->
+				</div> <!-- .header-text-hold -->
+				<div class="header-img-hold">
+					<img src="img/header-img.png" alt="" class="header-img" width="426" height="320" style="max-width: 426px">
+				</div> <!-- .header-img-hold -->
+			</div> <!-- .header-wrapper -->
+
+		</div> <!-- .container -->
+	</header> <!-- .header -->
+
+
+	<div class="page-wrapper">
+		<div class="container">
+			<div class="page-holder d-flex">
+
+
+				<div class="page-sidebar" id="sidebar">
+					<div class="contact-item contact-item-phone">
+						<a href="#collapse-phone" class="btn btn-contact" data-bs-toggle="collapse">
+							<span class="btn-icon">
+								<span class="btn-icon-circle"></span>
+								<span class="btn-icon-hold">
+									<svg class="icon icon-phone-call"><use xlink:href="#icon-phone-call"></use></svg>
+								</span>
+							</span> <!-- .btn-icon -->
+							<span class="btn-text">Call by phone</span>
+						</a> <!-- .btn -->
+						<div id="collapse-phone" class="collapse">
+							<div class="collapse-contact d-flex justify-content-center align-items-center">
+								<a href="tel:+09041231234" class="link fw-500">0904 123 1234</a>
+							</div> <!-- .collapse-contact -->
+						</div> <!-- #collapse-phone.collapse -->
+					</div> <!-- .contact-item -->
+					<div class="contact-item contact-item-email">
+						<a href="#collapse-email" class="btn btn-contact" data-bs-toggle="collapse">
+							<span class="btn-icon">
+								<span class="btn-icon-circle"></span>
+								<span class="btn-icon-hold">
+									<svg class="icon icon-send"><use xlink:href="#icon-send"></use></svg>
+								</span>
+							</span> <!-- .btn-icon -->
+							<span class="btn-text">Send email</span>
+						</a> <!-- .btn -->
+						<div id="collapse-email" class="collapse">
+							<div class="collapse-contact d-flex justify-content-center align-items-center">
+								<a href="mailto:testsupport@email.com" class="link fw-500">testsupport@email.com</a>
+							</div> <!-- .collapse-contact -->
+						</div> <!-- #collapse-phone.collapse -->
+					</div> <!-- .contact-item -->
+
+					<p class="box-online">
+						<span class="status-online"></span>
+						Customer Service is ONLINE
+					</p> <!-- .box-online -->
+
+					<p class="box-info">
+						<span class="box-info-text-big required">Calling a premium number</span>
+						<span class="box-info-text-small">Costs 90ct / min</span>
+					</p> <!-- .box-info -->
+
+					<div class="banner">
+						<a href="#" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-circle position-absolute top-50 start-50 translate-middle">
+							<svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+						</a>
+						<img src="img/banner-1.jpg" alt="" class="banner-item">
+					</div> <!-- .banner -->
+
+					<div class="banner">
+						<a href="#" data-bs-toggle="modal" data-bs-target="#modal">
+							<img src="img/banner-2.jpg" alt="" class="banner-item">
+						</a>
+					</div> <!-- .banner -->
+
+				</div> <!-- .page-sidebar -->
+
+
+				<div class="page-content">
+					<div class="card-common-issue card-margin">
+						<h3 class="title">Tell us about issue so we can help you more quickly.</h3>
+
+						<div class="common-issue-input-hold position-relative">
+							<svg class="icon icon-search position-absolute top-50 translate-middle-y"><use xlink:href="#icon-search"></use></svg>
+							<input class="form-control common-issue-input" id="search-input" placeholder="Search for your issue">
+						</div> <!-- .common-issue-input-hold -->
+
+						<h4 class="common-issue-title fw-600">Common issues</h4>
+
+						<div class="common-issue" id="common-issue">
+
+							<div class="common-issue-item--empty" id="common-issue-empty" style="display: none;">
+								<svg class="icon icon-alert-circle"><use xlink:href="#icon-alert-circle"></use></svg>
+								<span>Sorry, nothing found. You can call us <a href="tel:+09041231234">0904 123 1234</a> and ask questions.</span>
+							</div> <!-- .common-issue-item--empty -->
+							
+							<div class="common-issue-item js-list-item">
+								<svg class="icon icon-corner-down-right collapse-icon"><use xlink:href="#icon-corner-down-right"></use></svg>
+								<a href="#common-issue-box-1" class="common-issue-item-label" data-bs-toggle="collapse">
+									<span class="item-label-1">Password and account access</span>
+									<span class="item-label-2">Resets, unlock accoint, unknown charges</span>
+								</a>
+								<div id="common-issue-box-1" class="common-issue-item-box collapse show"  data-bs-parent="#common-issue">
+									<div class="collapse-content">
+										Need password Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequatur repudiandae eius quod sint. <a href="#">Necessitatibus</a> quis libero quia vero officiis?
+									</div> <!-- .collapse-content -->
+								</div> <!-- #common-issue-box-1.common-issue-item-box -->
+							</div> <!-- .common-issue-item -->
+							
+							<div class="common-issue-item js-list-item">
+								<svg class="icon icon-corner-down-right collapse-icon"><use xlink:href="#icon-corner-down-right"></use></svg>
+								<a href="#common-issue-box-2" class="common-issue-item-label" data-bs-toggle="collapse">
+									<span class="item-label-1">Check status of a refund</span>
+									<span class="item-label-2">You can check the status of your refund in your orders</span>
+								</a>
+								<div id="common-issue-box-2" class="common-issue-item-box collapse"  data-bs-parent="#common-issue">
+									<div class="collapse-content">
+										Need status Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio <a href="#">consequatur</a> repudiandae eius quod sint. Necessitatibus quis libero quia vero officiis?
+									</div> <!-- .collapse-content -->
+								</div> <!-- #common-issue-box-1.common-issue-item-box -->
+							</div> <!-- .common-issue-item -->
+
+						</div> <!-- .common-issue -->
+					</div> <!-- .card-common-issue -->
+
+					<div class="card-info card-margin">
+						<h3 class="title title-big">Need more information?</h3>
+						<div class="card-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took make a type specimen <b>€0,10</b>. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more.</p>
+						</div> <!-- .card-content -->
+					</div> <!-- .card-info -->
+
+					<div class="card-light-text card-margin">
+						<h3 class="title title-big">Need more information?</h3>
+						<div class="card-content">
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took make a type specimen <b>€0,10</b>. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more.</p>
+						</div> <!-- .card-content -->
+					</div> <!-- .card-info -->
+
+					<div class="card-list card-margin">
+						<h3 class="card-list-title title title-big">Contact our Customer Support on social media:</h3>
+
+						<div class="card-list-holder">
+							<div class="card-list-item">
+								<div class="card-list-item-icon-hold">
+									<div class="card-list-item-icon">
+										<svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg>
+									</div> <!-- .card-list-item-icon -->
+								</div> <!-- .card-list-item-icon-hold -->
+								<h3 class="card-list-item-title title">Lorem Ipsum is simply dummy text of the printing!</h3>
+								<p class="card-content">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+								</p> <!-- .card-content -->
+							</div> <!-- .card-list-item -->
+							<div class="card-list-item">
+								<div class="card-list-item-icon-hold">
+									<div class="card-list-item-icon" style="--card-icon-bg: #f5bd78; --card-icon-text: #fff">
+										<svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg>
+									</div> <!-- .card-list-item-icon -->
+								</div> <!-- .card-list-item-icon-hold -->
+								<h3 class="card-list-item-title title">Lorem Ipsum is simply dummy text of the printing!</h3>
+								<p class="card-content">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+								</p> <!-- .card-content -->
+							</div> <!-- .card-list-item -->
+							<div class="card-list-item">
+								<div class="card-list-item-icon-hold">
+									<div class="card-list-item-icon" style="--card-icon-bg: #a399e8; --card-icon-text: #fff">
+										<svg class="icon icon-thumbs-up"><use xlink:href="#icon-thumbs-up"></use></svg>
+									</div> <!-- .card-list-item-icon -->
+								</div> <!-- .card-list-item-icon-hold -->
+								<h3 class="card-list-item-title title">Lorem Ipsum is simply dummy text of the printing!</h3>
+								<p class="card-content">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+								</p> <!-- .card-content -->
+							</div> <!-- .card-list-item -->
+						</div> <!-- .card-list-holder -->
+					</div> <!-- .card-list card-margin -->
+
+					<div class="card-comments card-margin">
+						<h3 class="title title-big d-flex">
+							<img src="img/comments-detail.png" alt="" class="title-img">
+							<span class="title-part d-flex flex-column">
+								<span class="title-part-lg">Have a question?</span>
+								<span class="title-part-sm">You can write it in our comments:</span>
+							</span>
+						</h3>
+<!--
+						<div class="card-comments-hold">
+							<div id="fb-root"></div>
+							<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0&appId=447453078953875&autoLogAppEvents=1" nonce="75afRono"></script>
+							<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+						</div> <!~~ .card-comments-hold ~~>
+-->
+					</div> <!-- .card-comments card-margin -->
+
+
+
+				</div> <!-- .page-content -->
+
+
+			</div> <!-- .page-holder -->
+		</div> <!-- .container -->
+	</div> <!-- .page-wrapper -->
+
+
+	@@include('_block--footer.html')
+
+@@include('_system--footer.html')
+
