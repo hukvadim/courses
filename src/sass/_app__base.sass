@@ -1,0 +1,82 @@
+\:root
+	--base-fz : $default-font-size
+	--base-tc : $default-text-color
+	--base-pl : $default-placeholder-color
+
+*, ::before, ::after 
+	box-sizing: border-box
+
+svg
+	position: relative
+	width: 24px
+	height: 24px
+
+a,
+button,
+.pointer,
+.btn,
+	cursor: pointer
+	text-decoration: none
+
+
+a,
+a:focus,
+a:focus-within,
+a:active,
+a:hover,
+button,
+button:focus,
+button:focus-within,
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active
+	outline: none !important
+	border: none
+
+a
+	color: $pr
+	&:active
+		color: $pr
+	&:hover
+		color: $pr-h
+
+.d-flex
+	display: flex
+
+.d-justify
+	justify-content: center 
+
+.animate::before,
+.animate::after,
+.animate
+	transition: all .25s liner
+
+.text-limit span,
+.text-limit
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+	display: inline-block
+	max-width: 100%
+
+.form-control::-webkit-input-placeholder,
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control::placeholder
+	color: $default-placeholder-color
+
+.after,
+.before
+	position: relative
+
+.after::after,
+.before::before
+	content: ''
+	position: absolute
+
+
+$fwList: 300 400 500 600 700 800
+@each $fontWeight in $fwList
+	.fw-#{$fontWeight}
+		font-weight: $fontWeight

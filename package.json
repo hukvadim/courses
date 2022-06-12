@@ -1,0 +1,24 @@
+{
+  "name": "gulp-project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-file-include": "latest",
+    "gulp-rename": "latest",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-concat": "latest",
+    "sass-rem": "^2.0.1",
+    "sass-units-translate": "latest",
+    "sassdash": "^0.9.0"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "run-sequence": "^2.2.1"
+  }
+}
