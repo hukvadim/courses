@@ -20,7 +20,7 @@ jobs:
       uses: burnett01/rsync-deployments@5.2
       with:
         switches: -avzr --delete
-        path: home/inderio/inderio.com/www/
+        path: /home/inderio
         remote_host: inderio.ftp.tools
         remote_user: inderio
         remote_key: ${{ secrets.REMOTE_KEY }}
