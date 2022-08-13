@@ -21,10 +21,10 @@ jobs:
       with:
         switches: -avzr --delete
         path: .
-        remote_host: ${{ secrets.REMOTE_HOST }}
-        remote_user: ${{ secrets.REMOTE_USER }}
+        remote_host: inderio.ftp.tools
+        remote_user: inderio
         remote_key:  ${{ secrets.REMOTE_KEY }}
-        remote_path: ${{ secrets.REMOTE_PATH }}
+        remote_path: /home/inderio/inderio.com/www/
     - name: Remove IP from whitelist
       id: removeip
       run: |
